@@ -7,12 +7,12 @@
 
 <p>Chúng ta nhận được 1 file có dạng svg, 1 dạng file khá là lạ. Trước tiên ta thử mở file này lên, thì biết được đây là 1 file liên quan tới web.<p>
 
-![enhance]()
+![enhance](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/enhance1.png)
 
 <p> Thử F12 xem nó ra cái gì (hoặc có thể Open with Notepad từ cái file ban đầu)<p>
 <p> Vào Source và ta thấy có 1 đoạn chữ gì đó bị cắt thành nhiều đoạn ngắn, được ẩn trong thẻ "tspan"<p>
 
-![enhance]()
+![enhance](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/enhance2.png)
 
 <p>Ghép các đoạn đó lại với nhau ta được 1 flag rõ ràng: <p>
 
@@ -22,17 +22,17 @@
 
 ### Đề bài 
 
-![information]()
+![information](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/information0.png)
 
 <p> Chúng ta nhận được 1 ảnh con meo meo ngồi bên cạnh máy tính, nhìn đoạn code trên máy tính thì mình chắc chắn là chả dùng được gì ở đây, vậy nên chúng ta cùng xem xét đến các dữ liệu của ảnh. <p>
 
 <p> Mở ảnh bằng Notepad thôi <p>
 
-![information]()
+![information](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/information1.png)
 
 <p> Ồ, ta thấy được 1 đoạn mã rất khả nghi nha (nhận biết đoạn mã nhờ kinh nghiệm làm bài + học Crypto sẽ thấy rất quen mắt) <p>
 
-![information]()
+![information](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/information2.png)
 
 <p> Dịch đoạn mã từ base64 ra ASCII ta được flag <p>
 
@@ -42,13 +42,13 @@
 
 ### Đề bài
 
-![garden]()
+![garden](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/garden0.png)
 
 <p> Chúng ta nhận được 1 bức ảnh khu vườn, không có gì khả nghi ở trong bức ảnh này cả, hãy thử mở nó bằng Notepad nào <p>
 
 <p> Kiểm tra tất cả các thứ trong phần Notepad này thì thấy ở cuối có ngay flag <p>
 
-![garden]()
+![garden](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/garden1.png)
 
 ```Flag: picoCTF{more_than_m33ts_the_3y3657BaB2C}```
 
@@ -56,7 +56,7 @@
 
 ### Đề bài
 
-![lookey]()
+![lookey](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/lookeyhere0.png)
 
 <p> Chúng ta được 1 file văn bản được để với dạng txt, mở ra thì là 1 bản gì gì đó như bài Thánh Ca của đạo Thiên Chúa ??? <p> 
 
@@ -64,7 +64,7 @@
 
 <p> Dùng Ctrl+F tìm chữ Pico thôi, thấy ngay flag <p>
 
-![lookey]()
+![lookey](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/lookeyhere1.png)
 
 ```Flag: picoCTF{gr3p_15_@w3s0m3_4c479940}```
 
@@ -72,7 +72,7 @@
 
 ### Đề bài
 
-![whoisit]()
+![whoisit](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whoisit0.png)
 
 <p> Đề bài là cho 1 file email, nhưng người gửi là mạo danh, chúng ta cần phải tìm tên thật của người đó và tên thật đó chính là flag <p>
 
@@ -88,15 +88,15 @@
 
 <p> Đọc thử hint của bài nó bảo <p>
 
-![whoisit]()
+![whoisit](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whoisit2.png)
 
 <p> Ồ, vậy là ta không tìm được bằng mail, chúng ta phải sử dụng IP của mail này, xác định được IP địa điểm gửi, ta có thể xác định được danh tính của người này. Vậy thì dễ thôi, ta mở file email này bằng Notepad <p>
 
-![whoisit]()
+![whoisit](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whoisit3.png)
 
 <p> Trong một chuỗi thông tin nhận được ta thấy có 1 địa chỉ IP rất đáng ngờ, đồng thời ở sau đó có đoạn thông tin "permitted" nên có thể chắc chắn được điều này <p>
 
-![whoisit]()
+![whoisit](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whoisit4.png)
 
 <p> Ta tìm trên web <p>
 
@@ -104,7 +104,7 @@
 
 <p> Và ta tìm được tên của chính chủ <p>
 
-![whoisit]()
+![whoisit](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whoisit5.png)
 
 ```Flag: picoCTF{WilhelmZwalina}```
 
@@ -112,19 +112,19 @@
 
 ### Đề bài
 
-![milkslap]()
+![milkslap](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/milkslap0.png)
 
 <p> Bài này cho chúng ta một cái web đổ sữa vào 1 người nào đó <p>
 
-![milkslap]()
+![milkslap](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/milkslap1.png)
 
 <p> Vì đây là bài dạng Forensics nên sẽ không có lỗ hổng như Web - exploitation, vậy nên ta sẽ phải tìm hiểu trong web này có những source gì có thể khai thác. Ta mở source của web và thấy được có 1 file có thể sử dụng là concat_v.png <p>
 
-![milkslap]()
+![milkslap](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/milkslap2.png)
 
 <p> Sau khi kiểm tra dạng file, các header và metadata thì file này không thuộc dạng File Carving hay File Detail bình thường, mà sẽ hơi xu hướng dạng Steganography nhưng vẫn cơ bản, vậy nên ta sẽ dung PowerShell hoặc cho vào Ubuntu sử dụng zsteg để giải mã các đoạn text ẩn trong ảnh <p>
 
-![milslap]()
+![milslap](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/milkslap3.png)
 
 ```Flag: picoCTF{imag3_m4n1pul4t10n_sl4p5} ```
 
@@ -132,15 +132,15 @@
 
 ### Đề bài 
 
-![extension]()
+![extension](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/extension0.png)
 
 <p> Đề cho ta một file txt rất bình thường. Mở file lên ta thấy ngay ở đoạn đầu có dấu hiệu của 1 file PNG <p>
 
-![extension]()
+![extension](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/extension1.png)
 
 <p> Đổi lại đuôi file thành png ta có ngay flag <p>
 
-![extension]()
+![extension](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/extension2.png)
 
 ```Flag: picoCTF{now_you_know_about_extensions}```
 
@@ -148,11 +148,11 @@
 
 ### Đề bài 
 
-![someta]()
+![someta](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/someta0.png)
 
 <p> Đề bài cho ta 1 file ảnh, dựa theo đề bài " Meta", mở file dưới dạng Notepad và thấy ngay flag ở cuối file <p>
 
-![someta]()
+![someta](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/someta1.png)
 
 ```Flag: picoCTF{s0_m3ta_fec06741}```
 
@@ -160,11 +160,11 @@
 
 ### Đề bài 
 
-![whatlies]()
+![whatlies](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whatlies0.png)
 
 <p> Đề bài cho 1 cái ảnh và nó hỏi có gì ẩn giấu trong đó, đối với ảnh, ta lại sử dụng tool zsteg để kiểm tra thôi. Và thế là ta thấy ngay flag <p>
 
-![whatlies]()
+![whatlies](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/whatlies1.png)
 
 ```Flag: picoCTF{h1d1ng_1n_th3_b1t5}```
 
@@ -172,25 +172,25 @@
 
 ### Đề bài
 
-![1000]()
+![1000](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/like1000_0.png)
 
 <p> Đề cho ta 1 file .tar tương tự dạng file .zip .rar là 1 dạng file nén, khi mở thử file đó ra ta thấy file có tên 999.tar <p>
 
-![1000]()
+![1000](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/like1000_1.png)
 
 <p> Điều này chứng tỏ, mình phải mở được tất cả (hoặc có thể là 1 vài) file để có thể lấy được flag. (có thể nó ở 1 chỗ bất kỳ, nhưng hãy tin tưởng là nó ở file cuối cùng đi) <p>
 
 <p> Để nó vào Ubuntu và bắt đầu dùng code để mở file. Để mở file tar, ta dùng code "tar xvf tên file" <p>
 
-![1000]()
+![1000](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/like1000_2.png)
 
 <p> Giờ thì ta sử dụng 1 đoạn code lặp để có thể mở liên tục file .tar, vì ta biết được quy luật của nó sẽ là 1000->999->998->997..... nên ta sẽ code đoạn mã như sau <p>
 
-![1000]()
+![1000](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/like1000_3.png)
 
 <p> Sau khi extract hết tất cả file, ta có được 1 bức ảnh flag.png <p>
 
-![1000]()
+![1000](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/like1000_4.png)
 
 <p> Tìm flag.png mở ra thì chính là flag luôn <p>
 
@@ -200,17 +200,17 @@
 
 ### Đề bài 
 
-![fun]()
+![fun](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/fun0.png)
 
 <p> Nó cho ta 1 file dạng pptm (dạng powerpoint) nhưng khi mở thì không thể mở được, điều này chứng tỏ ta phải chuyển sang đúng định dạng file. Mở file bằng Notepad hoặc thả vào ubuntu sử dụng binwalk <p>
 
-![fun]()
+![fun](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/fun1.png)
 
 <p> Vậy là ta biết được đây là 1 file zip bị đổi tên. Và ta có thấy được trong 1 vị trí folder có thể sẽ có flag "ppt/slideMasters/hidden" <p>
 
 <p> Tới vị trí file đó, mở lên thì thấy được 1 đoạn mã <p>
 
-![fun]()
+![fun](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/fun2.png)
 
 <p> Nhìn là biết đây là mã Base64 vậy nên ta decode luôn và có được flag <p>
 
@@ -225,20 +225,20 @@
 
 <p> Cho file vào ubuntu và sử dụng binwalk file, ta có được kết quả chứa 1 file PDF và 1 file JPEG, nhưng ảnh này lại không mang định dạng .zip vậy nên ta không thể đổi đuôi file thành zip và giải nén được <p>
 
-![format]()
+![format](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/format1.png)
 
 <p> Vậy ta biết được đây là 1 file ẩn sâu trong ảnh. Vậy nên ta sẽ sử dụng câu lệnh " binwalk --dd='.*' " (không tính ngoặc kép nha) để extract file bất chấp bị khóa khả năng archive <p>
 
-![format]()
+![format](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/format2.png)
 
 <p> Ta có được file 123.jpg_extracted <p>
 
 <p> Mở file ta có 1 ảnh 0.jpg và 1 file 2E11E (file này nhìn hình có vẻ như định dạng pdf nên ta đổi tên file là pdf) <p>
 
-![format]()
+![format](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/format3.png)
 
 <p> Xem slide và đến slide 25 ta thấy được flag ở trên góc <p>
 
-![format]()
+![format](https://github.com/KongSugoi/Forensics-File-Detail-WU/blob/main/Folder%20Solve%20Picture/format4.png)
 
 ``` Flag: flag{m0r3_v4lu4bl3_th4n_y0u_th1nk} ```
